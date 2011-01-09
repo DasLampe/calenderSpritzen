@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spritzen>
+	<Element>
+		<name>Eisen</name>
+		<next1>8 weeks</next1>
+		<next2>12 weeks</next2>
+		<farbe>8EBDFA</farbe>
+	</Element>
+	
+	<Element>
+		<name>B12</name>
+		<next1>4 weeks</next1>
+		<next2/>
+		<farbe>FA5050</farbe>
+	</Element>
+	
+	<Element>
+		<name>ADEK</name>
+		<next1>6 weeks</next1>
+		<next2/>
+		<farbe>FFFA63</farbe>
+	</Element>
+	
+	<!-- Daten -->
+<Data><datum>1294268400</datum><typ>B12</typ><next1>1296687600</next1><next2/></Data><Data><datum>1294268400</datum><typ>ADEK</typ><next1>1297897200</next1><next2/></Data><Data><datum>1291676400</datum><typ>Eisen</typ><next1>1296514800</next1><next2>1298934000</next2></Data></Spritzen>
