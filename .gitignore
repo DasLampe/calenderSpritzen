@@ -1,0 +1,6 @@
+stat.xml
+.settings/
+.project
+.buildpath
+
+!.htaccess
