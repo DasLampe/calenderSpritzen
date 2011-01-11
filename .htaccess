@@ -1,0 +1,3 @@
+####ModRewrite
+RewriteEngine On
+RewriteRule ^(.*)$ public/index.php?get=$1 [NC,L]
