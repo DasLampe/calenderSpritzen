@@ -3,7 +3,7 @@
 // | Copyright (c) 2009 DasLampe <daslampe@lano-crew.org> |
 // | Encoding: UTF-8 |
 // +----------------------------------------------------------------------+
-class impeesaTemplate
+class template
 {
 	private static $instance = NULL;
 	 
@@ -34,7 +34,7 @@ class impeesaTemplate
 	public function __construct()
 	{
 		$this->templateFolder		= PATH_TPL;
-		$this->templateExtension	= "tpl";
+		$this->templateExtension	= "php";
 		$this->cachePath			= PATH_MAIN."tmp/";
 	}
 	 

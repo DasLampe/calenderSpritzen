@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+body {
+	background-color: #99ee99;
+	margin: 0px;
+	padding: 0px;
+}
+
+#hp {
+	width: 800px;
+	margin: auto;
+	overflow: auto;
+	background-color: #eeeeee;
+}
+
+#head
+{
+	height: 125px;
+	font-size: 50pt;
+	padding: 20px;
+}
+
+#content
+{
+	padding-left: 50px;
+}
+
+.spritze
+{
+	width: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	border: 2px solid #000000;
+	-moz-border-radius: 10px;
+}
