@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spritzen>
+	<Element>
+		<name>Eisen</name>
+		<next1>8 weeks</next1>
+		<next2>12 weeks</next2>
+		<farbe>8EBDFA</farbe>
+	</Element>
+	
+	<Element>
+		<name>B12</name>
+		<next1>4 weeks</next1>
+		<next2/>
+		<farbe>FA5050</farbe>
+	</Element>
+	
+	<Element>
+		<name>ADEK</name>
+		<next1>6 weeks</next1>
+		<next2/>
+		<farbe>FFFA63</farbe>
+	</Element>
+	
+	<!-- Daten -->
+</Spritzen>
