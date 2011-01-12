@@ -2,5 +2,6 @@ stat.xml
 .settings/
 .project
 .buildpath
+tmp/*
 
 !.htaccess
