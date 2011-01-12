@@ -1,4 +1,8 @@
 <?php
+// +----------------------------------------------------------------------+
+// | Copyright (c) 2011 DasLampe <dasLampe@lano-crew.org> |
+// | Encoding:  UTF-8 |
+// +----------------------------------------------------------------------+
 include_once(dirname(__FILE__)."/spritzen.class.php");
 
 class output
@@ -40,28 +44,30 @@ class output
 		echo '</form>';
 	}
 	
-	private function timeToDate($timestamp)
+	public static function timeToDate($timestamp)
 	{
 		$time	= $timestamp - time();
 		$weeks	= $time / (3600 * 24 * 7);
-		
+		$return	= "";
 		if($weeks <= 1)
 		{
-			echo '<span style="background-color: red">';
+			$return	.= '<span style="background-color: red">';
 			switch($weeks)
 			{
 				case 1:
-					echo '(Noch 1. Woche)';
+					$return .= '(Noch 1. Woche)';
 					break;
 				default:
 					$days	= floor($weeks * 7);
-					echo '(Nur noch '.$days.' Tag(e))';
+					$return .= '(Nur noch '.$days.' Tag(e))';
 			}
-			echo '</span>';
+			$return .= '</span>';
 		}
 		else
 		{
-			echo '(Noch '.floor($weeks).' Wochen)';
+			$return .= '(Noch '.floor($weeks).' Wochen)';
 		}
+		
+		return $return;
 	}
 }

@@ -1,4 +1,8 @@
 <?php
+// +----------------------------------------------------------------------+
+// | Copyright (c) 2011 DasLampe <dasLampe@lano-crew.org> |
+// | Encoding:  UTF-8 |
+// +----------------------------------------------------------------------+
 header("content-type: text/html; charset=utf-8");
 include_once(dirname(__FILE__)."/output.class.php");
 $output	= new output();

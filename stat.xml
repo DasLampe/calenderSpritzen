@@ -4,22 +4,28 @@
 		<name>Eisen</name>
 		<next1>8 weeks</next1>
 		<next2>12 weeks</next2>
-		<farbe>8EBDFA</farbe>
+		<color>8EBDFA</color>
 	</Element>
 	
 	<Element>
 		<name>B12</name>
 		<next1>4 weeks</next1>
 		<next2/>
-		<farbe>FA5050</farbe>
+		<color>FA5050</color>
 	</Element>
 	
 	<Element>
 		<name>ADEK</name>
 		<next1>6 weeks</next1>
 		<next2/>
-		<farbe>FFFA63</farbe>
+		<color>FFFA63</color>
 	</Element>
 	
 	<!-- Daten -->
-</Spritzen>
+	<Data>
+		<date>1294830189</date>
+		<typ>Eisen</typ>
+		<next1>1294930189</next1>
+		<next2/>
+	</Data>
+<Data><date>1294786800</date><typ>B12</typ><next1>1297206000</next1><next2/></Data><Data><date>1294786800</date><typ>ADEK</typ><next1>1298415600</next1><next2></next2></Data></Spritzen>

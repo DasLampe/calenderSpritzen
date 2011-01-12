@@ -4,4 +4,17 @@
 // | Encoding:  UTF-8 |
 // +----------------------------------------------------------------------+
 ?>
-	<link rel="stylesheet" type="text/css" href="http://localhost//calenderSpritzen/css/style.css" />
+<div class="spritze" style="background-color: {typColor};">
+	<h2>{typName}</h2>
+	<p>
+	Nächste: {next1}
+	{if}{next2} != ""{/if}
+	- {next2}
+	{/endif}
+	&nbsp; {timeLeft}<br/>
+	Letzte: {last}
+	</p>
+	<p>
+	{form}
+	</p>
+</div>

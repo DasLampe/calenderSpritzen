@@ -1,9 +1,13 @@
 <?php
+// +----------------------------------------------------------------------+
+// | Copyright (c) 2011 DasLampe <dasLampe@lano-crew.org> |
+// | Encoding:  UTF-8 |
+// +----------------------------------------------------------------------+
 class spritzen
 {
 	private $xmlFile;
 	private $xml;
-	private $elemente;
+	public $elemente;
 	
 	function __construct($xmlFile="")
 	{
@@ -24,7 +28,8 @@ class spritzen
 			$this->elemente[(string)$element->name]	= array(
 													"name"		=> (string) $element->name,
 													"next1"		=> (string) $element->next1,
-													"next2"		=> (string) $element->next2
+													"next2"		=> (string) $element->next2,
+													"color"		=> (string) $element->color
 													);
 		}
 	}
@@ -57,9 +62,8 @@ class spritzen
 			if($spritzen->typ == $typ)
 			{
 				$data[]		= array(
-									"info"		=> $spritzen->info,
 									"typ"		=> $spritzen->typ,
-									"datum"		=> (int) $spritzen->datum,
+									"date"		=> (int) $spritzen->date,
 									"next1"		=> (int) $spritzen->next1,
 									"next2"		=> (int) $spritzen->next2
 									);
@@ -80,7 +84,7 @@ class spritzen
 		$datum	= mktime(0,0,0,$datum[1], $datum[0], $datum[2]);
 		
 		$spritze	= $this->xml->addChild("Data");
-		$spritze->addChild("datum",		$datum);
+		$spritze->addChild("date",		$datum);
 		$spritze->addChild("typ",		$typ);
 		$spritze->addChild("next1",		strtotime('+'.$this->elemente[$typ]['next1'], $datum));
 		if(!empty($this->elemente[$typ]['next2']))
@@ -105,7 +109,7 @@ class spritzen
 	{
 		$sortArray = array();
 		foreach($data as $key => $array) {
-			$sortArray[$key] = $array['datum'];
+			$sortArray[$key] = $array['date'];
 		}
 	
 		array_multisort($sortArray, SORT_DESC, SORT_NUMERIC, $data);
